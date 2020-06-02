@@ -1,0 +1,252 @@
+<body>
+    <div id="container">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d">
+        </div>
+        <div id="e"></div>
+        <div id="f"></div>
+        <div id="g">
+            <div class="box"></div>
+        </div>
+        <div id="h">
+            <div class="box"></div>
+            <div class="box2"></div>
+        </div>
+        <div id="i">
+            <div class="cross"></div>
+            <div class="cross2"></div>
+        </div>
+        <div id="j">
+            <div class="cross"></div>
+            <div class="cross2"></div>
+        </div>
+        <div id="k">
+          <div class="cross"></div>
+          <div class="cross2"></div>
+        </div>
+        <div id="l">
+          <div class="arrow"></div>
+          <div class="arrow2"></div>
+          <div class="arrow3"></div>
+        </div>
+    </div>
+</body>
+
+
+<style>
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  #container {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 100px);
+  }
+  #a {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+     
+  }
+
+  #b {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: red;
+    
+  }
+
+  #c {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 3px solid black;
+  }
+
+  #d{
+    width: 40px;
+    height: 40px;
+    border-radius: 0 0 0 17px;
+    background-color:red;
+    border: 3px solid black;
+    position: relative;
+  }
+
+  #d .cross {
+      width: 10px;
+      height: 10px;
+     
+      background-color: white;
+      position:absolute;
+      transform: translate(5px, 10px) rotate(25deg);
+  }
+
+
+ #e {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 50% 50% 50%;
+    background-color: rgba(7, 201, 7, 0.756);
+    border: 3px solid black;
+ }
+
+ #f {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 20px 0  20px;
+    background-color: yellow;
+    border: 3px solid black;
+
+ }
+
+ #g {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    position: relative;
+ }
+
+ #g .box {
+    width: 30px;
+    height: 8px; 
+    background-color: black;
+    position: absolute;
+    transform: translate(5px, 10px);
+ }
+
+
+ #h {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    background-color: blue;
+    position: relative;
+ }
+
+ #h .box {
+    width: 30px;
+    height: 8px; 
+    background-color: yellow;
+    position: absolute;
+    transform: translate(5px, 10px);
+ }
+
+
+ #h .box2 {
+    width: 30px;
+    height: 8px; 
+    background-color: yellow;
+    position: absolute;
+    transform: translate(5px, 25px);
+ }
+
+ #i {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 3px solid black;
+    position: relative;
+  }
+#i .cross {
+    width: 30px;
+    height: 8px; 
+    background-color: white;
+    transform: translate(5px, 15px);
+    position: absolute;
+}
+
+#i .cross2 {
+    width: 30px;
+    height: 8px; 
+    background-color: white;
+    transform: translate(5px, 15px) rotate(270deg);
+    position: absolute;
+}
+
+#j {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    position: relative;
+  }
+#j .cross {
+    width: 30px;
+    height: 5px; 
+    background-color: black;
+    transform: translate(5px, 15px) rotate(45deg);
+    position: absolute;
+}
+
+#j .cross2 {
+    width: 30px;
+    height: 5px; 
+    background-color: black;
+    transform: translate(5px, 15px) rotate(135deg);
+    position: absolute;
+}
+
+#k {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 100%;
+    position: relative;
+  }
+#k .cross {
+    width: 30px;
+    height: 7px; 
+    background-color: black;
+    transform: translate(5px, 17px) rotate(45deg);
+    position: absolute;
+}
+
+#k .cross2 {
+    width: 30px;
+    height: 7px; 
+    background-color: black;
+    transform: translate(5px, 17px) rotate(135deg);
+    position: absolute;
+}
+
+
+#l {
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 100%;
+  position: relative;
+}
+
+#l .arrow {
+  width: 25px;
+  height: 2.5px; 
+  background-color: black;
+  transform: translate(6.5px, 19px);
+  position: absolute;
+}
+
+#l .arrow2 {
+  width: 17px;
+  height: 2.5px; 
+  background-color: black;
+  transform: translate(17px, 14px) rotate(45deg);
+  position: absolute;
+}
+
+#l .arrow3 {
+  width: 17px;
+  height: 2.5px; 
+  background-color: black;
+  transform: translate(17px, 24px) rotate(135deg);
+  position: absolute;
+}
+
+</style>
